@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(0,0,0);
+    background: -moz-radial-gradient(circle, rgba(0,0,0,1) 8%, rgba(27,35,42,1) 67%, rgba(16,53,113,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 8%, rgba(27,35,42,1) 67%, rgba(16,53,113,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 8%, rgba(27,35,42,1) 67%, rgba(16,53,113,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#103571",GradientType=1);
+}
+
+.container{
+    display: flex;
+    width:90vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 25px;
+    color:#fff;
+    cursor: pointer;
+    flex:0.5;
+    margin:10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 100px;
+    left:20px;
+    margin: 0;
+    opacity: 0;
+    
+}
+
+quote{
+    font-family: 'Satisfy', cursive;
+    display: block;
+    color:#fff;
+    font-size: 50px ;
+    padding-bottom: 20px;
+}
+
+by{
+    display: block;
+    margin-left:20px;
+    font-size: 20px;
+}
+
+.panel.active{
+    flex:5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 1s ease-in 0.4s;
+}
+
+@media (max-width: 480px){
+    .container{
+        width:100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
