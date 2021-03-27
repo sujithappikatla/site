@@ -118,17 +118,19 @@ body{
     display: flex;
     width:80vw;
     align-items: center;
+    justify-content: center ;
     flex-direction: column;
     position: relative;
     color:#fff; 
-    top:-250px;
+    top:-20%;
 }
 
 quote{
     font-family: 'Satisfy', cursive;
+    text-align: center;
     display: block;
     color:#fff;
-    font-size: 50px ;
+    font-size: 6vh ;
     padding-bottom: 20px;
 }
 
